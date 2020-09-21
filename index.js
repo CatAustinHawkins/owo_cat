@@ -21,12 +21,32 @@ client.once('ready', () => {
 client.on('message', message => {
     //so it doesnt reply to bots
     if(message.author.bot) return;
+	currency.add(message.author.id, 1);
 
 
     //sets the 'Playing' thingy - so it says 'Playing owo help' 
     client.user.setPresence({ activity: { name: 'owo help - bit.ly/owocat_help' }, status: 'online' })
   .then(console.log)
   .catch(console.error);
+
+    if (!message.content.startsWith(PREFIX)) return;
+	const input = message.content.slice(PREFIX.length).trim();
+	if (!input.length) return;
+	const [, command, commandArgs] = input.match(/(\w+)\s*([\s\S]*)/);
+
+	if (command === 'balance') {
+		// [gamma]
+	} else if (command === 'inventory') {
+		// [delta]
+	} else if (command === 'transfer') {
+		// [epsilon]
+	} else if (command === 'buy') {
+		// [zeta]
+	} else if (command === 'shop') {
+		// [theta]
+	} else if (command === 'leaderboard') {
+		// [lambda]
+	}
 
 //profile picture   
     pfpresponse = [`nice` , `bad`, `incredible` , `amazing` , `ok` , `epic`]
