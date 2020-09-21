@@ -21,6 +21,7 @@ client.once('ready', () => {
 client.on('message', message => {
     //so it doesnt reply to bots
     if(message.author.bot) return;
+    currency.add(message.author.id, 1);
 
 
     //sets the 'Playing' thingy - so it says 'Playing owo help' 
@@ -28,6 +29,50 @@ client.on('message', message => {
   .then(console.log)
   .catch(console.error);
 
+   if (!message.content.startsWith(PREFIX)) return;
+	const input = message.content.slice(PREFIX.length).trim();
+	if (!input.length) return;
+	const [, command, commandArgs] = input.match(/(\w+)\s*([\s\S]*)/);
+
+	if (command === 'balance') {
+		const target = message.mentions.users.first() || message.author;
+        return message.channel.send(`${target.tag} has ${currency.getBalance(target.id)}💰`);
+	} else if (command === 'inventory') {
+		// [delta]
+	} else if (command === 'transfer') {
+		// [epsilon]
+	} else if (command === 'buy') {
+		// [zeta]
+	} else if (command === 'shop') {
+		// [theta]
+	} else if (command === 'leaderboard') {
+		// [lambda]
+	}
+    
+    Reflect.defineProperty(currency, 'add', {
+	/* eslint-disable-next-line func-name-matching */
+	value: async function add(id, amount) {
+		const user = currency.get(id);
+		if (user) {
+			user.balance += Number(amount);
+			return user.save();
+		}
+		const newUser = await Users.create({ user_id: id, balance: amount });
+		currency.set(id, newUser);
+		return newUser;
+	},
+
+
+Reflect.defineProperty(currency, 'getBalance', {
+	/* eslint-disable-next-line func-name-matching */
+	value: function getBalance(id) {
+		const user = currency.get(id);
+		return user ? user.balance : 0;
+	},
+
+    const storedBalances = await Users.findAll();
+    storedBalances.forEach(b => currency.set(b.user_id, b));                       
+    
 //profile picture   
     pfpresponse = [`nice` , `bad`, `incredible` , `amazing` , `ok` , `epic`]
     if(message.content === (`${prefix1}pfp`)) {
@@ -37,6 +82,9 @@ client.on('message', message => {
         message.channel.send("Using the command `owo pfp` shows your profile picture!")
     }
 
+    if(message.content === (`owo test`) {
+       message.reply("test worked")
+    }
 
 //compliments
     compliments = [`You are perfect :two_hearts:` , `I love your smile` , `You have nice bones`, `I like your skin ^-^`, `:eyes: you want a compliment?`, `There's too many things to compliment you on >///<`, `Moto Moto would like you`, `You are perfect`, `You are shreksy`, `You smell like fish =^..^=` , `Could you marry me?` , `You have the ideal amount of ribs! :D` , `Your skin would make a good purse`]
