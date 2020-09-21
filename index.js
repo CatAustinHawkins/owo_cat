@@ -123,6 +123,7 @@ if (!message.content.startsWith(PREFIX)) return;
     pfpresponse = [`nice` , `bad`, `incredible` , `amazing` , `ok` , `epic`]
     if(message.content === (`${prefix1}pfp`)) {
         message.reply("Here is your " + pfpresponse[Math.floor(Math.random() * pfpresponse.length)] + " profile picture - " + message.author.displayAvatarURL());
+	message.reply("test")
     }
     if(message.content === (`${prefix1}help pfp`)) {
         message.channel.send("Using the command `owo pfp` shows your profile picture!")
