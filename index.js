@@ -35,7 +35,8 @@ client.on('message', message => {
 	const [, command, commandArgs] = input.match(/(\w+)\s*([\s\S]*)/);
 
 	if (command === 'balance') {
-		// [gamma]
+		const target = message.mentions.users.first() || message.author;
+		return message.channel.send(`${target.tag} has ${currency.getBalance(target.id)}💰`);
 	} else if (command === 'inventory') {
 		// [delta]
 	} else if (command === 'transfer') {
@@ -48,6 +49,31 @@ client.on('message', message => {
 		// [lambda]
 	}
 
+	Reflect.defineProperty(currency, 'add', {
+	/* eslint-disable-next-line func-name-matching */
+	value: async function add(id, amount) {
+		const user = currency.get(id);
+		if (user) {
+			user.balance += Number(amount);
+			return user.save();
+		}
+		const newUser = await Users.create({ user_id: id, balance: amount });
+		currency.set(id, newUser);
+		return newUser;
+	},
+
+	Reflect.defineProperty(currency, 'getBalance', {
+		/* eslint-disable-next-line func-name-matching */
+		value: function getBalance(id) {
+			const user = currency.get(id);
+			return user ? user.balance : 0;
+	},
+	
+	const storedBalances = await Users.findAll();
+	storedBalances.forEach(b => currency.set(b.user_id, b));
+	
+	
+			       
 //profile picture   
     pfpresponse = [`nice` , `bad`, `incredible` , `amazing` , `ok` , `epic`]
     if(message.content === (`${prefix1}pfp`)) {
