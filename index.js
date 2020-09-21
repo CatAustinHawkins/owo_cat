@@ -45,14 +45,6 @@ client.once('ready', async () => {
 	console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', async message => {
-	if (message.author.bot) return;
-	
-
-client.once('ready', () => {
-    console.log('Ready!')
-})
-
 client.on('message', message => {
     //so it doesnt reply to bots
     if(message.author.bot) return;
