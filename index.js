@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { Users, CurrencyShop } = require('./dbObjects');
-const { Op } = require('sequelize');
-const currency = new Discord.Collection();
+//const { Users, CurrencyShop } = require('./dbObjects');
+//const { Op } = require('sequelize');
+//const currency = new Discord.Collection();
 
 
 //Reflect.defineProperty(currency, 'add', {
