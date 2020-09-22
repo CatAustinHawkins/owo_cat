@@ -1,42 +1,26 @@
 const Discord = require('discord.js');
+const { prefix1, prefix2, giphyToken, token } = require('./config.json');
 const client = new Discord.Client();
-//const { Users, CurrencyShop } = require('./dbObjects');
-//const { Op } = require('sequelize');
-//const currency = new Discord.Collection();
 
+var GphApiClient = require('giphy-js-sdk-core')
+giphy = GphApiClient(giphyToken)
 
-//Reflect.defineProperty(currency, 'add', {
-	/* eslint-disable-next-line func-name-matching */
-//	value: async function add(id, amount) {
-//		const user = currency.get(id);
-//		if (user) {
-//			user.balance += Number(amount);
-//			return user.save();
-//		}
-//		const newUser = await Users.create({ user_id: id, balance: amount });
-//		currency.set(id, newUser);
-//		return newUser;
-//	},
-//});
+const Eris = require("eris");
+const { Member } = require('eris');
 
-//Reflect.defineProperty(currency, 'getBalance', {
-//	/* eslint-disable-next-line func-name-matching */
-//	value: function getBalance(id) {
-//		const user = currency.get(id);
-//		return user ? user.balance : 0;
-//	},
-//});
+const bot = new Eris.CommandClient(`NjkxMzk4MjkzOTAwNjIzOTEy.XuasZA.QRxXObD8-VonzO6VrCB234ZLUCQ`, {}, {
+    description: "owo cat :)",
+    owner: "Inane Cat",
+    prefix: "owo "
+});
 
-//client.once('ready', async () => {
-//	const storedBalances = await Users.findAll();
-//	storedBalances.forEach(b => currency.set(b.user_id, b));
-//	console.log(`Logged in as ${client.user.tag}!`);
-//});
+client.once('ready', () => {
+    console.log('Ready!')
+})
 
 client.on('message', message => {
     //so it doesnt reply to bots
     if(message.author.bot) return;
-//	currency.add(message.author.id, 1);
 
 
     //sets the 'Playing' thingy - so it says 'Playing owo help' 
@@ -44,16 +28,10 @@ client.on('message', message => {
   .then(console.log)
   .catch(console.error);
 
-//	if (!message.content.startsWith(`${prefix1}balance`)) {
-//		const target = message.mentions.users.first() || message.author;
-//		return message.channel.send(`${target.tag} has ${currency.getBalance(target.id)}💰`);
-//	}
-			       
 //profile picture   
     pfpresponse = [`nice` , `bad`, `incredible` , `amazing` , `ok` , `epic`]
     if(message.content === (`${prefix1}pfp`)) {
         message.reply("Here is your " + pfpresponse[Math.floor(Math.random() * pfpresponse.length)] + " profile picture - " + message.author.displayAvatarURL());
-	message.reply("test")
     }
     if(message.content === (`${prefix1}help pfp`)) {
         message.channel.send("Using the command `owo pfp` shows your profile picture!")
@@ -61,7 +39,7 @@ client.on('message', message => {
 
 
 //compliments
-    compliments = [`You are perfect :two_hearts:` , `I love your smile` , `You have nice bones`, `I like your skin ^-^`, `:eyes: you want a compliment?`, `There's too many things to compliment you on >///<`, `Moto Moto would like you`, `You are perfect`, `You are shreksy`, `You smell like fish =^..^=` , `Could you marry me?` , `You have the ideal amount of ribs! :D` , `Your skin would make a good purse`]
+    compliments = [`You are perfect :two_hearts:` , `I love your smile` , `You have nice bones`, `I like your skin ^-^`, `:eyes: you want a compliment?`, `There's too many things to compliment you on >///<`, `Moto Moto would like you`, `You are perfect`, `You are shreksy`, `You smell like fish =^..^=` , `Could you marry me?` , `You have the ideal amount of ribs! :D` , `Your skin would make a good purse` ]
     if(message.content === (`${prefix1}compliment`)) {
         message.reply(compliments[Math.floor(Math.random() * compliments.length)])
     }
@@ -299,4 +277,4 @@ client.on('message', message => {
 })
 
 //bot login
-client.login(NjkxMzk4MjkzOTAwNjIzOTEy.XnfY1g.8DCVoNohIV0hSanpdnF2to-01ak)
+client.login(token)
