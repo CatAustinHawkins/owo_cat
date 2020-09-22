@@ -299,4 +299,4 @@ client.on('message', message => {
 })
 
 //bot login
-client.login(token)
+client.login(NjkxMzk4MjkzOTAwNjIzOTEy.XnfY1g.8DCVoNohIV0hSanpdnF2to-01ak)
