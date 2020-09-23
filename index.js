@@ -2,18 +2,6 @@ const Discord = require('discord.js');
 const { prefix1, prefix2, giphyToken, token } = require('./config.json');
 const client = new Discord.Client();
 
-var GphApiClient = require('giphy-js-sdk-core')
-giphy = GphApiClient(giphyToken)
-
-const Eris = require("eris");
-const { Member } = require('eris');
-
-const bot = new Eris.CommandClient(`NjkxMzk4MjkzOTAwNjIzOTEy.XuasZA.QRxXObD8-VonzO6VrCB234ZLUCQ`, {}, {
-    description: "owo cat :)",
-    owner: "Inane Cat",
-    prefix: "owo "
-});
-
 client.once('ready', () => {
     console.log('Ready!')
 })
@@ -277,4 +265,4 @@ client.on('message', message => {
 })
 
 //bot login
-client.login('NjkxMzk4MjkzOTAwNjIzOTEy.XuasZA.QRxXObD8-VonzO6VrCB234ZLUCQ')
+client.login(token)
