@@ -277,4 +277,4 @@ client.on('message', message => {
 })
 
 //bot login
-client.login(process.env.NjkxMzk4MjkzOTAwNjIzOTEy.XnfY1g.wN5y9r_gxy98uPFbzuqOJf_SvaY)
+client.login(process.env.token)
