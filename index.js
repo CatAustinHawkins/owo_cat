@@ -259,7 +259,7 @@ client.on('message', message => {
     }
 
     if(message.content === (`${prefix1}information`)) {
-        message.channel.send("owo cat was made using javascript, by Inane Cat (c a t#2829)")
+        message.channel.send("owo cat was made using javascript, by Inane Cat (InaneCat#2829)")
         message.channel.send("More information about the bot: https://bit.ly/owocat_help")
     }
     if(message.content === (`${prefix1}help information`)) {
