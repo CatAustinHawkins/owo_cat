@@ -24,7 +24,7 @@ client.on('message', message => {
 
 
     //sets the 'Playing' thingy - so it says 'Playing owo help' 
-    client.user.setPresence({ activity: { name: 'owo help - bit.ly/owocat_help' }, status: 'online' })
+    client.user.setPresence({ activity: { name: 'owo help - bit.ly/help_owocat' }, status: 'online' })
   .then(console.log)
   .catch(console.error);
 
@@ -260,15 +260,15 @@ client.on('message', message => {
 
     if(message.content === (`${prefix1}information`)) {
         message.channel.send("owo cat was made using javascript, by Inane Cat (InaneCat#2829)")
-        message.channel.send("More information about the bot: https://bit.ly/owocat_help")
+        message.channel.send("More information about the bot: https://bit.ly/help_owocat")
     }
     if(message.content === (`${prefix1}help information`)) {
-        message.channel.send("Using the command `owo information` tells you that this bot was made using javascript, and gives you a link for more information (https://bit.ly/owocat_help)")
+        message.channel.send("Using the command `owo information` tells you that this bot was made using javascript, and gives you a link for more information (https://bit.ly/help_owocat)")
     }
 
 //help
     if(message.content === (`${prefix1}help`)) {
-        message.channel.send("Hello ^-^ I am owo_cat! The prefix is `owo` (For Example: `owo cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, `kermit` & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `hug` & `pfp`\nMovie Commands: `beemovie`, `wholebeemovie`, `shrek` & `wholeshrekmovie`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nInformation Commands: `help`, `invite`, `information`\nUse `owo help [command]` for more information about each command! For example: `owo help cat`\nOr go to this link - https://bit.ly/owocat_help")
+        message.channel.send("Hello ^-^ I am owo_cat! The prefix is `owo` (For Example: `owo cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, `kermit` & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `hug` & `pfp`\nMovie Commands: `beemovie`, `wholebeemovie`, `shrek` & `wholeshrekmovie`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nInformation Commands: `help`, `invite`, `information`\nUse `owo help [command]` for more information about each command! For example: `owo help cat`\nOr go to this link - https://bit.ly/help_owocat")
     }
     if(message.content === (`${prefix1}help help`)) {
         message.channel.send("Using the command `owo help` tells you the prefix (`owo`) and lists every command!")
