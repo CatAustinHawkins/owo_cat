@@ -31,9 +31,17 @@ client.on('message', message => {
         message.reply("Here is your " + pfpresponse[Math.floor(Math.random() * pfpresponse.length)] + " profile picture - " + message.author.displayAvatarURL());
     }
     if(message.content === (`${prefix1}help pfp`)) {
-        message.channel.send("Using the command `cat pfp` shows your profile picture!")
+        message.channel.send("Using the command `cat pfp` or 'cat avatar' shows your profile picture!")
     }
 
+    //profile picture   
+    pfpresponse = [`nice` , `incredible` , `amazing` , `ok` , `epic` , 'beautiful' , 'poggers' , 'swag']
+    if(message.content === (`${prefix1}avatar`)) {
+        message.reply("Here is your " + pfpresponse[Math.floor(Math.random() * pfpresponse.length)] + " profile picture - " + message.author.displayAvatarURL());
+    }
+    if(message.content === (`${prefix1}help avatar`)) {
+        message.channel.send("Using the command `cat avatar` or 'cat pfp' shows your profile picture!")
+    }
 
 //compliments
     compliments = [`You are perfect :two_hearts:` , `I love your smile` , `You have nice bones`, `I like your skin ^-^`, `There's too many things to compliment you on >///<`, `Moto Moto would like you`, `You are perfect`, `You are shreksy`, `You smell like fish =^..^=` , `Could you marry me?` , `You have the ideal amount of ribs! :D` , `Your skin would make a good purse`]
