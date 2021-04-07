@@ -21,9 +21,9 @@ client.on('message', message => {
 
 
     //sets the 'Playing' thingy - so it says 'Playing cat help' 
- //   client.user.setPresence({ activity: { name: 'currently being edited :D' }, status: 'online' })
-//  .then(console.log)
- // .catch(console.error);
+    client.user.setPresence({ activity: { name: 'currently being edited :D' }, status: 'online' })
+    .then(console.log)
+    .catch(console.error);
 
 //profile picture   work work work
     pfpresponse = [`nice` , `incredible` , `amazing` , `ok` , `epic` , 'beautiful' , 'poggers' , 'swag']
