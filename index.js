@@ -53,8 +53,8 @@ client.on('message', message => {
     }
 
 //unsettling compliments
-    unsettlingcompliments = [`You have nice bones`, `I like your skin ^-^`, `you smell like fish =^..^='  `You have the ideal amount of ribs! :D` , `Your skin would make a good purse`]
-    if(message.content === (`${prefix1}unsettling compliments`)) {
+    unsettlingcompliments = [`You have nice bones`, `I like your skin ^-^`, `you smell like fish =^..^=`  `You have the ideal amount of ribs! :D` , `Your skin would make a good purse`]
+    if(message.content === (`${prefix1}unsettling compliment`)) {
      message.reply(unsettlingcompliments[Math.floor(Math.random() * unsettlingcompliments.length)])
     }
     if(message.content === (`${prefix1}help unsettling compliments`)) {
@@ -186,7 +186,7 @@ client.on('message', message => {
 
 //help
     if(message.content === (`${prefix1}help`)) {
-        message.channel.send("Hello ^-^ I am owo_cat! The prefix is `cat ` (For Example: `cat cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `hug` & `pfp`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nInformation Commands: `help`, `invite`, `information`\nUse `cat help [command]` for more information about each command! For example: `cat help cat`\nOr go to this link - https://bit.ly/help_owocat")
+        message.channel.send("Hello ^-^ I am owo_cat! The prefix is `cat ` (For Example: `cat cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `unsettling compliment`, `hug` & `pfp`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nInformation Commands: `help`, `invite`, `information`\nUse `cat help [command]` for more information about each command! For example: `cat help cat`\nOr go to this link - https://bit.ly/help_owocat")
     }
     if(message.content === (`${prefix1}help help`)) {
         message.channel.send("Using the command `cat help` tells you the prefix (`cat `) and lists every command!")
