@@ -1,9 +1,6 @@
 const Discord = require('discord.js');
-const { prefix1, prefix2, giphyToken, token } = require('./config.json');
+const { prefix1, token } = require('./config.json');
 const client = new Discord.Client();
-
-var GphApiClient = require('giphy-js-sdk-core')
-giphy = GphApiClient(giphyToken)
 
 const Eris = require("eris");
 const { Member } = require('eris');
