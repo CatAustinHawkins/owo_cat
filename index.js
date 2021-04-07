@@ -34,7 +34,7 @@ client.on('message', message => {
         message.reply("Here is your " + pfpresponse[Math.floor(Math.random() * pfpresponse.length)] + " profile picture - " + message.author.displayAvatarURL());
     }
     if(message.content === (`${prefix1}help pfp`)) {
-        message.channel.send("Using the command `owo pfp` shows your profile picture!")
+        message.channel.send("Using the command `cat pfp` shows your profile picture!")
     }
 
 
@@ -44,7 +44,7 @@ client.on('message', message => {
         message.reply(compliments[Math.floor(Math.random() * compliments.length)])
     }
     if(message.content === (`${prefix1}help compliment`)) {
-        message.channel.send("Using the command `owo compliment` compliments you!.")
+        message.channel.send("Using the command `cat compliment` compliments you!.")
     }
 
 //rolls a dice
@@ -53,7 +53,7 @@ client.on('message', message => {
         message.channel.send("The dice rolled a " + dice[Math.floor(Math.random() * dice.length)])
     }
     if(message.content === (`${prefix1}help rolldice`)) {
-        message.channel.send("Using the command `owo rolldice` rolls a 12 sided dice ^-^")
+        message.channel.send("Using the command `cat rolldice` rolls a 12 sided dice ^-^")
     }
 
 //flips a coin
@@ -62,7 +62,7 @@ client.on('message', message => {
         message.channel.send("The coin landed on " + coin[Math.floor(Math.random() * coin.length)])
     }
     if(message.content === (`${prefix1}help flipcoin`)) {
-        message.channel.send("Using the command `owo flipcoin` flips a coin, which will either land on heads or tails.")
+        message.channel.send("Using the command `cat flipcoin` flips a coin, which will either land on heads or tails.")
     }
 
 //rates the user
@@ -71,7 +71,7 @@ client.on('message', message => {
         message.reply("Hm.. You are a " + rate[Math.floor(Math.random() * rate.length)]);
     }
     if(message.content === (`${prefix1}help rateme`)) {
-        message.channel.send("Using the command `owo rateme` means you get a rating from the bot ^-^")
+        message.channel.send("Using the command `cat rateme` means you get a rating from the bot ^-^")
     }
 
 //cuddles
@@ -80,7 +80,7 @@ client.on('message', message => {
         message.channel.send("https://gph.is/291u1MC")
     }
     if(message.content === (`${prefix1}help hug`)) {
-        message.channel.send("Using the command `owo hug` gives you a virtual hug! <3")
+        message.channel.send("Using the command `cat hug` gives you a virtual hug! <3")
     }
 
 //animal gifs
@@ -92,7 +92,7 @@ client.on('message', message => {
         message.channel.send(catgifs[Math.floor(Math.random() * catgifs.length)])
     }
     if(message.content === (`${prefix1}help cat`)) {
-        message.channel.send("Using the command `owo cat` tells you a Cat fact, and shows you a gif of a cat.")
+        message.channel.send("Using the command `cat cat` tells you a Cat fact, and shows you a gif of a cat.")
     }
     //big cats
     bigcats = [`https://gph.is/2FQ1oPO` , `https://gph.is/2vIYhUl` , `https://gph.is/2x9Luhs` , `https://giphy.com/gifs/3o7526wZgmsGwFMF3i` , `https://giphy.com/gifs/3o752ldHKQQtLcgCEo` , `https://giphy.com/gifs/3o7aD9M5PEy9Teb7B6` , `https://gph.is/2Ek8r26` , `https://gph.is/2FSUd9O` , `https://giphy.com/gifs/8JQbGGz5tyVnnnu4uY` , `https://giphy.com/gifs/xTiN0uPQRihf3PwBKU` , `https://giphy.com/gifs/1X7tkqybHElaEaFazG` , `https://giphy.com/gifs/nu81tqIAUO8Le` , `https://giphy.com/gifs/DULXQjPy8qhW0` , `https://giphy.com/gifs/TamBxvSGZp5tu` , `https://giphy.com/gifs/5kFxVCoRl3WhuK7wbQ` , `https://gph.is/g/ZdozvrW` , `https://giphy.com/gifs/tsRqkQCs972nTvtojc` , `https://giphy.com/gifs/5YRcOBKAfdVFC` , `https://giphy.com/gifs/3otPoUGBfbuOgFhcpW` , `https://giphy.com/gifs/Nzb29UNGCEGxW` , `https://giphy.com/gifs/qXu0XdPmivC7e` , `https://giphy.com/gifs/xULW8lXeU67NykQ2MU` , `https://giphy.com/gifs/3o7525sTBPUsrmGJ6E` , `https://giphy.com/gifs/3o752bYX59WD4G5bWg` , `https://giphy.com/gifs/W2iwQeKLBzYXTT8GzD` , `https://giphy.com/gifs/7UHpzD9eayVPO` , `https://gph.is/1EjhPBx`]
@@ -102,7 +102,7 @@ client.on('message', message => {
         message.channel.send(bigcats[Math.floor(Math.random() * bigcats.length)])
     }
     if(message.content === (`${prefix1}help bigcat`)) {
-        message.channel.send("Using the command `owo bigcat` tells you a fact about a big cat and shows you a gif of a big cat! (either a cheetah, snow leopard, lynx, bobcat, lion, tiger, jaguar, leopard, rusty-spotted cat or black-footed cat)")
+        message.channel.send("Using the command `cat bigcat` tells you a fact about a big cat and shows you a gif of a big cat! (either a cheetah, snow leopard, lynx, bobcat, lion, tiger, jaguar, leopard, rusty-spotted cat or black-footed cat)")
     }
 
     //rodents
@@ -113,7 +113,7 @@ client.on('message', message => {
         message.channel.send(rodentgifs[Math.floor(Math.random() * rodentgifs.length)])
     }
     if(message.content === (`${prefix1}help rodent`)) {
-        message.channel.send("Using the command `owo rodent` tells you a Rodent fact, and shows you a gif of a Rodent (either a Chinchilla, Bunny, Hamster, Rat, Mouse or Guinea Pig)")
+        message.channel.send("Using the command `cat rodent` tells you a Rodent fact, and shows you a gif of a Rodent (either a Chinchilla, Bunny, Hamster, Rat, Mouse or Guinea Pig)")
     }
     //dogs
     doggifs = [`https://tenor.com/view/dog-uwuw-zoom-in-happy-gif-12094646` , `https://giphy.com/gifs/4Zo41lhzKt6iZ8xff9` , `https://giphy.com/gifs/OI8TsOa9KFAPu` , `https://giphy.com/gifs/fvmz3gCAip1M4` , `https://giphy.com/gifs/eeUJaTwsHh3tswkaYm` , `https://giphy.com/gifs/zkcXND5kY4POU` , `https://giphy.com/gifs/Fc32CJcqXzOXm` , `https://giphy.com/gifs/B2HqyXi7r6j9W9cCG2` , `https://giphy.com/gifs/aVPS1Ek7RhTtS` , `https://giphy.com/gifs/wmgsmee4a4vx6` , `https://giphy.com/gifs/Y3OsQArmae5jy`]
@@ -123,7 +123,7 @@ client.on('message', message => {
         message.channel.send(doggifs[Math.floor(Math.random() * doggifs.length)])
     }
     if(message.content === (`${prefix1}help dog`)) {
-        message.channel.send("Using the command `owo dog` tells you a Dog fact, and shows you a gif of a dog.")
+        message.channel.send("Using the command `cat dog` tells you a Dog fact, and shows you a gif of a dog.")
     }
     //wild cats
     wildgifs = [`https://gph.is/2cG6wcM` , `https://gph.is/XHWsDC` , `https://gph.is/2p9WM2o` , `https://gph.is/1HaJhMw` , `https://gph.is/16j9gWH` , `https://gph.is/1macHUJ` , `https://gph.is/227BkFL` , `https://gph.is/1SHjSnC` , `https://gph.is/1xJvz2O` , `https://gph.is/2WgkWFq` , `https://gph.is/2d947YM`]
@@ -133,7 +133,7 @@ client.on('message', message => {
         message.channel.send(wildgifs[Math.floor(Math.random() * wildgifs.length)])
     }
     if(message.content === (`${prefix1}help wildcats`)) {
-        message.channel.send("Using the command `owo wildcats` tells you a fact about either a Stoat, Weasel, Raccoon or Opossum and displays a gif of one of those animals!")
+        message.channel.send("Using the command `cat wildcats` tells you a fact about either a Stoat, Weasel, Raccoon or Opossum and displays a gif of one of those animals!")
     }
 //not animals
     //pokemon :)
@@ -144,7 +144,7 @@ client.on('message', message => {
         message.channel.send(pokemongifs[Math.floor(Math.random() * pokemongifs.length)])
     }
     if(message.content === (`${prefix1}help pokemon`)) {
-        message.channel.send("Using the command `owo pokemon` shows you a gif of a random pokemon, and also some random pokemon trivia!")
+        message.channel.send("Using the command `cat pokemon` shows you a gif of a random pokemon, and also some random pokemon trivia!")
     }
 
     facts = [`You are Beautiful` , `I love you!` , `107 billion humans have lived on the Earth!` , `Trans Rights are Human Rights!` , `You are epic!` , `Black Lives Matter!` , `You eat at least 1.5 bugs in chocolate every year` , `Lobsters pee out of their faces.` , `The longest wedding veil was 22,843ft/6962m` , `Humans are just one of the estimated 8.7 million species on Earth.` , `Consuming Two to three teaspoons of raw nutmeg can induce hallucinations, convulsions, pain, nausea, and paranoia that can last for several days` , `The heaviest apple grown was a Hokuto apple and it weighed 1.849kg` , `99.9% of species that have lived on Earth are extinct` , `Cats once delivered mail in Belgium.` , `The longest book title contains 1,809 words.` , `Scientists have partially revived disembodied pig brains.` , `The Apollo astronauts' footprints on the Moon could stay there for 100 million years.` , `Some cats are allergic to people.` , `You can hear a blue whale's heartbeat from more than 2 miles away.` , `Before the invention of color TV, 75% of people said they dreamed in black and white. Today, only 12% do.` , `Ketchup was sold as medicine in the 1830s.` , `Snakes can belch fire.` , `Cleopatra lived closer to the invention of the iPhone than she did to the building of the Great Pyramid.`, `Shakespeare and Pocahontas both lived during the same time.` , `France was still executing people with a guillotine when the first Star Wars film came out.` , `Mammoths went extinct 1,000 years after the Egyptians finished building the Great Pyramid.` , `Anne Frank, Martin Luther King Jr., and Barbara Walters were born in the same year, 1929.` , `The difference in time between when Tyrannosaurus Rex and Stegosaurus lived is greater than the difference in time between Tyrannosaurus Rex and now.` , `Cambridge University is older than the Aztec empire.` , `Every two minutes, we take more pictures than all of humanity did in the 19th century.` , `Scotland is farther north than Alaska.` , `The pyramids were as old to the Romans as the Romans are to us.` , `A TI-83 calculator has six times more processing power than the computer that landed Apollo 11 on the moon.` , `Rhydon was the first Pokemon created` , `Clefairy was almost the mascot for the Pokemon series` , `Victini is the only Pokemon with the Pokdex number 000` , `Koffing And Weezing Were Going To Be Named After American Cities` , `Pokemon is the only video game to appear on the front cover of TIME magazine.` , `Charmander has the longest name among all the unevolved starters.` , `The First Edition Holographic Charizard Card is valued at $55,000+` , `Ponyta is easily capable of jumping over the Eiffel Tower in a single giant leap` , `Rapidash can run at 150mph/241kmh` , `Dragonite can fly twice the speed of sound.` , `Luxray is said to have the ability to see through objects.` , `Drifloon kills children. :eyes:` , `Gothorita manipulates children :eyes:` , `Spoink can never stop bouncing- otherwise it will die` , `Magikarp can jump 29,000 feet (8840 metres) into the air` , `A Greyhound could beat a Cheetah in a long distance race` , `The tallest dog in the world is 44 inches/1.118m tall` , `A Dog's sense of smell is 100,000 times better than Humans` , `A greyhound can run 45mph/72kmh` , `Dogs can also find yawns to be contagious!` , `A panting Dog can take 300-400 breaths every minute! (compared to 30-40 a minute)` , `In Nothern Countries, Stoats change colours with the seasons to camouflage, and also to adapt its fur to the weather!` , `A Stoat once travelled 70km in 2 weeks!` , `They help slow the spread of Lyme Disease by eating Ticks!` , `Due to an Opossum's body temperature - they almost never get rabies!` , `Opossums are immune to most snake venom!` , `Raccoons will try to wash their food before they eat it!` , `Raccoons can live up to 20 years in captivity!` , `A Raccoon once lived in the White House!` , `The Least Weasel is the smallest carnivore in the world!` , `Weasels stay warm by curling up into balls!` , `Hamsters can learn their own name!` , `The first Hamsters came from Syria!` , `Chinchillas are native to the Andes Mountains in northern Chile!` , `Chinchillas are omnivores! (they eat plants + meat)` , `Chinchillas take dust baths to keep clean!` , `Mice can squeeze through openings as small as the size of a penny!` , `Most Rodents are Nocturnal!` , `A group of mice can be referred to as a 'mischief'` , `Rats can hold their breath for several minutes!` , `A Rat's tail helps it keep cool!` , `A Guinea Pig can open its eyes while in its mother’s womb 14 days before it is born!` , `The oldest Guinea Pig lived to be 14 years (and 10.5 months) old!` , `Rabbits teeth never stop growing! :0` , `Like cats, rabbits purr when they are happy ^-^` , `Bunnies can grow up to 4 feet long!` , `Bunnies can live to be 10 years old!` , `Bunnies are crepuscular, which means they are most active at dawn and dusk.` , `Rabbits' vision almost covers 360 degrees!` , `Cheetahs can’t roar, but they can purr! ^-^` , `A cheetah can go from zero to 60 miles per hour / 97 kilometres per hour in three seconds!` , `A Lion has the loudest Roar out of all the cats!` , `Panthers aren't a seperate species of big cat, they usually are the black variants of Leopards and Jaguars!` , `Male Amur/Siberian Tigers can grow up to 10.5ft/3.3m long!` , `The black spots that appear on a Cheetah's coat grow out of black spots on their skin!` , `Snow leopards can't roar, but they do have a main call that has been described as a piercing yowl - which is so loud it can be heard over the roar of a river!` , `A Snow Leopard can travel 25 miles/40 kilometres in a night!` , `Some Snow Leopards can jump 9m/30ft in the air!` , `House Cats share 95.6% of their genetic makeup with Tigers!` , `A House Cat can run 30mph/48kmh!` , `The oldest Cat lived to be 38!` , `Cats cannot taste anything sweet!` , `Cats can jump up to six times their own length!` , `Between 2002 and 2012 the average lifespan of a cat increased by a year!` , `Every cat’s nose-print is unique, like your human fingerprints!` , `House-Cats have contributed to the extinction of 63 different species!`]
@@ -152,7 +152,7 @@ client.on('message', message => {
         message.channel.send("Here is your random fact: " + facts[Math.floor(Math.random() * facts.length)])
     }
     if(message.content === (`${prefix1}help facts`)) {
-        message.channel.send("Using the command `owo facts` tells you a random fact!")
+        message.channel.send("Using the command `cat facts` tells you a random fact!")
     }
 
 //information
@@ -160,7 +160,7 @@ client.on('message', message => {
         message.reply("Here is the invite link to add the bot to your server - https://bit.ly/owo_cat ^-^")
     }
     if(message.content === (`${prefix1}help invite`)) {
-        message.channel.send("Using the command `owo invite` sends you a link to add the bot to your server (https://bit.ly/owo_cat)")
+        message.channel.send("Using the command `cat invite` sends you a link to add the bot to your server (https://bit.ly/owo_cat)")
     }
 
     if(message.content === (`${prefix1}information`)) {
@@ -168,15 +168,15 @@ client.on('message', message => {
         message.channel.send("More information about the bot: https://bit.ly/help_owocat")
     }
     if(message.content === (`${prefix1}help information`)) {
-        message.channel.send("Using the command `owo information` tells you that this bot was made using javascript, and gives you a link for more information (https://bit.ly/help_owocat)")
+        message.channel.send("Using the command `cat information` tells you that this bot was made using javascript, and gives you a link for more information (https://bit.ly/help_owocat)")
     }
 
 //help
     if(message.content === (`${prefix1}help`)) {
-        message.channel.send("Hello ^-^ I am owo_cat! The prefix is `owo` (For Example: `owo cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, `kermit` & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `hug` & `pfp`\nMovie Commands: `beemovie`, `wholebeemovie`, `shrek` & `wholeshrekmovie`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nInformation Commands: `help`, `invite`, `information`\nUse `owo help [command]` for more information about each command! For example: `owo help cat`\nOr go to this link - https://bit.ly/help_owocat")
+        message.channel.send("Hello ^-^ I am owo_cat! The prefix is `cat ` (For Example: `cat cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `hug` & `pfp`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nInformation Commands: `help`, `invite`, `information`\nUse `cat help [command]` for more information about each command! For example: `cat help cat`\nOr go to this link - https://bit.ly/help_owocat")
     }
     if(message.content === (`${prefix1}help help`)) {
-        message.channel.send("Using the command `owo help` tells you the prefix (`owo`) and lists every command!")
+        message.channel.send("Using the command `cat help` tells you the prefix (`cat`) and lists every command!")
     }
 
 })
