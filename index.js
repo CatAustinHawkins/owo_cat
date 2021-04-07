@@ -53,13 +53,13 @@ client.on('message', message => {
   //  }
 
 //unsettling compliments
-    unsettlingcompliments = [`You have nice bones`, `I like your skin ^-^`, `you smell like fish =^..^=`  `You have the ideal amount of ribs! :D` , `Your skin would make a good purse`]
-    if(message.content === (`${prefix1}unsettling compliment`)) {
-     message.reply(unsettlingcompliments[Math.floor(Math.random() * unsettlingcompliments.length)])
-    }
-    if(message.content === (`${prefix1}help unsettling compliments`)) {
-        message.channel.send("Using the command `cat unsettling compliments` compliments you! >:)")
-    }
+ //   unsettlingcompliments = [`You have nice bones`, `I like your skin ^-^`, `you smell like fish =^..^=`  `You have the ideal amount of ribs! :D` , `Your skin would make a good purse`]
+ //   if(message.content === (`${prefix1}unsettling compliment`)) {
+ //    message.reply(unsettlingcompliments[Math.floor(Math.random() * unsettlingcompliments.length)])
+ //   }
+ //   if(message.content === (`${prefix1}help unsettling compliments`)) {
+  //      message.channel.send("Using the command `cat unsettling compliments` compliments you! >:)")
+ //   }
 //rolls a dice
     dice = [`1`,`2`,`3`,`4`,`5`,`6`,`7`,`8`,`9`,`10`,`11`,`12`,`1`,`2`,`3`,`4`,`5`,`6`,`7`,`8`,`9`,`10`,`11`,`12`]
     if(message.content === (`${prefix1}rolldice`)) {
