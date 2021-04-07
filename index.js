@@ -53,7 +53,7 @@ client.on('message', message => {
     }
 
 //unsettling compliments
-    unsettlingcompliments = [`You have nice bones` , `I like your skin ^-^` , `you smell like fish =^..^=` , `You have the ideal amount of ribs! :D` , `Your skin would make a good purse`]
+    unsettlingcompliments = [`You are so beautiful, I'm going to cover you in resin and preserve you forever.` , `You have nice bones` , `I like your skin ^-^` , `you smell like fish =^..^=` , `You have the ideal amount of ribs! :D` , `Your skin would make a good purse`]
     if(message.content === (`${prefix1}unsettling compliment`)) {
           message.reply(unsettlingcompliments[Math.floor(Math.random() * unsettlingcompliments.length)])
     }
