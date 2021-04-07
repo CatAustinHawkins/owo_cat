@@ -44,7 +44,7 @@ client.on('message', message => {
     }
 
 //compliments
-    compliments = [`You are perfect :two_hearts:` , `I love your smile` , `There's too many things to compliment you on >///<`, `Moto Moto likes you`, `You are perfect`, `Could you marry me?']
+    compliments = [`You are perfect :two_hearts:` , `I love your smile` , `There's too many things to compliment you on >///<`, `Moto Moto likes you`, `You are perfect`, `Could you marry me?`]
     if(message.content === (`${prefix1}compliment`)) {
         message.reply(compliments[Math.floor(Math.random() * compliments.length)])
     }
