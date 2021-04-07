@@ -20,7 +20,7 @@ client.on('message', message => {
     if(message.author.bot) return;
 
 
-    //sets the 'Playing' thingy - so it says 'Playing owo help' 
+    //sets the 'Playing' thingy - so it says 'Playing cat help' 
     client.user.setPresence({ activity: { name: 'currently being edited :D' }, status: 'online' })
   .then(console.log)
   .catch(console.error);
@@ -33,8 +33,8 @@ client.on('message', message => {
     if(message.content === (`${prefix1}help pfp`)) {
         message.channel.send("Using the command `cat pfp` or 'cat avatar' shows your profile picture!")
     }
-
-    //profile picture   
+    
+//profile picture   
     pfpresponse = [`nice` , `incredible` , `amazing` , `ok` , `epic` , 'beautiful' , 'poggers' , 'swag']
     if(message.content === (`${prefix1}avatar`)) {
         message.reply("Here is your " + pfpresponse[Math.floor(Math.random() * pfpresponse.length)] + " profile picture - " + message.author.displayAvatarURL());
@@ -44,12 +44,18 @@ client.on('message', message => {
     }
 
 //compliments
-    compliments = [`You are perfect :two_hearts:` , `I love your smile` , `You have nice bones`, `I like your skin ^-^`, `There's too many things to compliment you on >///<`, `Moto Moto would like you`, `You are perfect`, `You are shreksy`, `You smell like fish =^..^=` , `Could you marry me?` , `You have the ideal amount of ribs! :D` , `Your skin would make a good purse`]
+    compliments = [`You are perfect :two_hearts:` , `I love your smile` , `There's too many things to compliment you on >///<`, `Moto Moto likes you`, `You are perfect`, `Could you marry me?']
     if(message.content === (`${prefix1}compliment`)) {
         message.reply(compliments[Math.floor(Math.random() * compliments.length)])
     }
     if(message.content === (`${prefix1}help compliment`)) {
         message.channel.send("Using the command `cat compliment` compliments you!.")
+    }
+
+//unsettling compliments
+    unsettlingcompliments = [`You have nice bones`, `I like your skin ^-^`, `you smell like fish =^..^='  `You have the ideal amount of ribs! :D` , `Your skin would make a good purse`] 
+    if(message.content === (`${prefix1}unsettling compliments`)) {
+        message.reply(unsettlingcompliments[Math.floor(Math.random() * unsettlingcompliments.length)])
     }
 
 //rolls a dice
