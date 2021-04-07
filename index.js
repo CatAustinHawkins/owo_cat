@@ -26,7 +26,7 @@ client.on('message', message => {
   .catch(console.error);
 
 //profile picture   
-    pfpresponse = [`nice` , `incredible` , `amazing` , `ok` , `epic` , 'beautiful' , 'poggers' , 'swag' , ']
+    pfpresponse = [`nice` , `incredible` , `amazing` , `ok` , `epic` , 'beautiful' , 'poggers' , 'swag']
     if(message.content === (`${prefix1}pfp`)) {
         message.reply("Here is your " + pfpresponse[Math.floor(Math.random() * pfpresponse.length)] + " profile picture - " + message.author.displayAvatarURL());
     }
