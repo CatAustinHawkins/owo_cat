@@ -173,7 +173,7 @@ client.on('message', message => {
         message.channel.send("Hello ^-^ I am owo_cat! The prefix is `cat ` (For Example: `cat cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `hug` & `pfp`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nInformation Commands: `help`, `invite`, `information`\nUse `cat help [command]` for more information about each command! For example: `cat help cat`\nOr go to this link - https://bit.ly/help_owocat")
     }
     if(message.content === (`${prefix1}help help`)) {
-        message.channel.send("Using the command `cat help` tells you the prefix (`cat`) and lists every command!")
+        message.channel.send("Using the command `cat help` tells you the prefix (`cat `) and lists every command!")
     }
 
 })
