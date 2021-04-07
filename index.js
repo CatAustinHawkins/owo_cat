@@ -24,7 +24,7 @@ client.on('message', message => {
 
 
     //sets the 'Playing' thingy - so it says 'Playing owo help' 
-    client.user.setPresence({ activity: { name: 'owo help - bit.ly/help_owocat' }, status: 'online' })
+    client.user.setPresence({ activity: { name: 'currently being edited :D' }, status: 'online' })
   .then(console.log)
   .catch(console.error);
 
