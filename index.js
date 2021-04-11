@@ -174,6 +174,11 @@ client.on('message', message => {
         message.channel.send("1. Use your Voice - Speak to your local politications, the brands you use and friends and encourage them to make postive changes to save our planet.\n2. Be Informed - Learn the facts and keep up-to-date with recent news and what you can do to help.\n3. Be Polticial - Vote for politicians that will make a difference.\n4. Travel responsibly - ")
         message.channel.send("https://www.wwf.org.uk/thingsyoucando")
     }
+//helplines
+    if(message.content === (`${prefix1}helplines`)){
+        message.channel.send("")
+    }
+        
 //information
     if(message.content === (`${prefix1}invite`)) {
         message.reply("Here is the invite link to add the bot to your server - https://bit.ly/owo_cat ^-^")
@@ -200,7 +205,7 @@ client.on('message', message => {
 
 //help
     if(message.content === (`${prefix1}help`)) {
-        message.channel.send("Hello ^-^ I am owo_cat! The prefix is `cat ` (For Example: `cat cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `unsettling compliment`, `hug` & `pfp`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nInformation Commands: `help`, `invite`, `information`, `vote`\nUse `cat help [command]` for more information about each command! For example: `cat help cat`\nOr go to this link - https://bit.ly/help_owocat")
+        message.channel.send("Hello ^-^ I am owo_cat! The prefix is `cat ` (For Example: `cat cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `unsettling compliment`, `hug` & `pfp`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nHelpful Commands: \nInformation Commands: `help`, `invite`, `information`, `vote`\nUse `cat help [command]` for more information about each command! For example: `cat help cat`\nOr go to this link - https://bit.ly/help_owocat")
     }
     if(message.content === (`${prefix1}help help`)) {
         message.channel.send("Using the command `cat help` tells you the prefix (`cat `) and lists every command!")
