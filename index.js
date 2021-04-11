@@ -205,7 +205,7 @@ client.on('message', message => {
         message.channel.send("Using the command `cat help` tells you the prefix (`cat `) and lists every command!")
     }
 
-})
+}
 
 //bot login
 client.login(process.env.token)
