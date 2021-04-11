@@ -173,6 +173,7 @@ client.on('message', message => {
         message.channel.send("According to the WWF, here are 10 tips that you can do to help save the earth-")
         message.channel.send("1. Use your Voice - Speak to your local politications, the brands you use and friends and encourage them to make postive changes to save our planet.\n2. Be Informed - Learn the facts and keep up-to-date with recent news and what you can do to help.\n3. Be Polticial - Vote for politicians that will make a difference.\n4. Travel responsibly - ")
         message.channel.send("https://www.wwf.org.uk/thingsyoucando")
+    }
 //information
     if(message.content === (`${prefix1}invite`)) {
         message.reply("Here is the invite link to add the bot to your server - https://bit.ly/owo_cat ^-^")
