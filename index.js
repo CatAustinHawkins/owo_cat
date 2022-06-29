@@ -193,8 +193,7 @@ client.on('message', message => {
         //message.channel.send("More information about the bot: https://bit.ly/help_owocat")
     }
     //if(message.content === (`${prefix1}help information`)) {
-        //message.channel.send("Using the command `cat information` tells you that this bot was made using javascript, and gives you a link for more information (https://bit.ly/help_owocat)")
-    }
+        //message.channel.send("Using the command `cat information` tells you that this bot was made using javascript, and gives you a link for more information (https://bit.ly/help_owocat)"
     
         if(message.content === (`${prefix1}vote`)) {
         message.reply("You can vote for clouud_cat here - https://discordbotlist.com/bots/owocat")
