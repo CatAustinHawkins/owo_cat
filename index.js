@@ -174,9 +174,20 @@ client.on('message', message => {
         message.channel.send("1. Use your Voice 2. Be Informed, 3. Be Political, 4. Travel Responsibily, 5. Eat Sustainably, 6. Reduce your Waste, 7. Watch what you Buy, 8. Find Ways to Donate, 9. Read the Living Planet Report, 10. Volunteer for your World.")
         message.channel.send("https://www.wwf.org.uk/thingsyoucando")
     }
+    
+    if(message.content === (`${prefix1}earth help`))
+    {
+        message.channel.send("Using the command `cat earth` shares advice from the WWF!")
+    }
 //helplines
     if(message.content === (`${prefix1}helplines`)){
         message.channel.send("For the United States, UK, Ireland, Canada, Australia, New Zealand, India, The Philippines, and South Africa")
+        message.channel.send("https://www.helpguide.org/find-help.htm")
+    }
+    
+    if(message.content === (`{$prefix1}helplines help`))
+    {
+        message.channel.send("Using the command `cat helplines` shares mental health, and other, helplines for the United States, UK, Ireland, Canada, Australia, New Zealand, India, The Philippines, and South Africa")
         message.channel.send("https://www.helpguide.org/find-help.htm")
     }
         
@@ -202,7 +213,7 @@ client.on('message', message => {
 
 //help
     if(message.content === (`${prefix1}help`)) {
-        message.channel.send("Hello ^-^ I am Clouud_Cat! The prefix is `cat ` (For Example: `cat cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `unsettling compliment`, `hug` & `pfp`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nHelpful Commands: 'helplines' 'earth' \nInformation Commands: `help`, `invite`, `information`, `vote`\nUse `cat help [command]` for more information about each command! For example: `cat help cat`")
+        message.channel.send("Hello ^-^ I am Clouud_Cat! The prefix is `cat ` (For Example: `cat cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `unsettling compliment`, `hug` & `pfp`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nHelpful Commands: `helplines` `earth` \nInformation Commands: `help`, `invite`, `information`, `vote`\nUse `cat help [command]` for more information about each command! For example: `cat help cat`")
     }
     if(message.content === (`${prefix1}help help`)) {
         message.channel.send("Using the command `cat help` tells you the prefix (`cat `) and lists every command!")
