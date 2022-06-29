@@ -169,43 +169,41 @@ client.on('message', message => {
     }
     
 //earth
-    if(message.content === (`${prefix1}help the earth`)){
+    if(message.content === (`${prefix1}earth`)){
         message.channel.send("According to the WWF, here are 10 tips that you can do to help save the earth-")
-        message.channel.send("1. Use your Voice - Speak to your local politications, the brands you use and friends and encourage them to make postive changes to save our planet.\n2. Be Informed - Learn the facts and keep up-to-date with recent news and what you can do to help.\n3. Be Polticial - Vote for politicians that will make a difference.\n4. Travel responsibly - ")
+        message.channel.send("1. Use your Voice 2. Be Informed, 3. Be Political, 4. Travel Responsibily, 5. Eat Sustainably, 6. Reduce your Waste, 7. Watch what you Buy, 8. Find Ways to Donate, 9. Read the Living Planet Report, 10. Volunteer for your World.")
         message.channel.send("https://www.wwf.org.uk/thingsyoucando")
     }
 //helplines
     if(message.content === (`${prefix1}helplines`)){
-        message.channel.send("")
+        message.channel.send("For the United States, UK, Ireland, Canada, Australia, New Zealand, India, The Philippines, and South Africa")
+        message.channel.send("https://www.helpguide.org/find-help.htm")
     }
         
 //information
     if(message.content === (`${prefix1}invite`)) {
-        message.reply("Here is the invite link to add the bot to your server - https://bit.ly/owo_cat ^-^")
+        message.reply("Here is the invite link to add the bot to your server - https://bit.ly/clouud_cat_invite ^-^")
     }
     if(message.content === (`${prefix1}help invite`)) {
-        message.channel.send("Using the command `cat invite` sends you a link to add the bot to your server (https://bit.ly/owo_cat)")
+        message.channel.send("Using the command `cat invite` sends you a link to add the bot to your server (https://bit.ly/clouud_cat_invite)")
     }
 
     if(message.content === (`${prefix1}information`)) {
-        message.channel.send("owo cat was made using javascript, by Inane Cat (c a t#2829)")
-        message.channel.send("More information about the bot: https://bit.ly/help_owocat")
+        message.channel.send("owo cat was made using javascript, by CatProcrasinates")
+        //message.channel.send("More information about the bot: https://bit.ly/help_owocat")
     }
-    if(message.content === (`${prefix1}help information`)) {
-        message.channel.send("Using the command `cat information` tells you that this bot was made using javascript, and gives you a link for more information (https://bit.ly/help_owocat)")
+    //if(message.content === (`${prefix1}help information`)) {
+        //message.channel.send("Using the command `cat information` tells you that this bot was made using javascript, and gives you a link for more information (https://bit.ly/help_owocat)")
     }
     
         if(message.content === (`${prefix1}vote`)) {
-        message.reply("You can vote for owo_cat here - https://discordbotlist.com/bots/owocat")
+        message.reply("You can vote for clouud_cat here - https://discordbotlist.com/bots/owocat")
         message.channel.send("Thank you :D")
-    }
-    if(message.content === (`${prefix1}help information`)) {
-        message.channel.send("Using the command `cat information` tells you that this bot was made using javascript, and gives you a link for more information (https://bit.ly/help_owocat)")
     }
 
 //help
     if(message.content === (`${prefix1}help`)) {
-        message.channel.send("Hello ^-^ I am owo_cat! The prefix is `cat ` (For Example: `cat cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `unsettling compliment`, `hug` & `pfp`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nHelpful Commands: wip \nInformation Commands: `help`, `invite`, `information`, `vote`\nUse `cat help [command]` for more information about each command! For example: `cat help cat`\nOr go to this link - https://bit.ly/help_owocat")
+        message.channel.send("Hello ^-^ I am clouud_cat! The prefix is `cat ` (For Example: `cat cat`)\nAnimal Commands: `cat`, `bigcat`, `wildcat`, `rodent`, `dog`, & `pokemon`\nPersonal Commands: `rateme` , `compliment`, `unsettling compliment`, `hug` & `pfp`\nOther Commands: `facts`, `flipcoin`, `rolldice`\nHelpful Commands: 'helplines' 'earth' \nInformation Commands: `help`, `invite`, `information`, `vote`\nUse `cat help [command]` for more information about each command! For example: `cat help cat`")
     }
     if(message.content === (`${prefix1}help help`)) {
         message.channel.send("Using the command `cat help` tells you the prefix (`cat `) and lists every command!")
