@@ -21,7 +21,7 @@ client.on('message', message => {
 
 
     //sets the 'Playing' thingy - so it says 'Playing cat help' 
-    client.user.setPresence({ activity: { name: 'cat help - bit.ly/help_owocat' }, status: 'online' })
+    client.user.setPresence({ activity: { name: 'cat help, have a good day!' }, status: 'online' })
     .then(console.log)
     .catch(console.error);
 
@@ -130,7 +130,7 @@ client.on('message', message => {
     }
     //dogs
     doggifs = [`https://tenor.com/view/dog-uwuw-zoom-in-happy-gif-12094646` , `https://giphy.com/gifs/4Zo41lhzKt6iZ8xff9` , `https://giphy.com/gifs/OI8TsOa9KFAPu` , `https://giphy.com/gifs/fvmz3gCAip1M4` , `https://giphy.com/gifs/eeUJaTwsHh3tswkaYm` , `https://giphy.com/gifs/zkcXND5kY4POU` , `https://giphy.com/gifs/Fc32CJcqXzOXm` , `https://giphy.com/gifs/B2HqyXi7r6j9W9cCG2` , `https://giphy.com/gifs/aVPS1Ek7RhTtS` , `https://giphy.com/gifs/wmgsmee4a4vx6` , `https://giphy.com/gifs/Y3OsQArmae5jy`]
-    dogresponse = [`cattos >> doggos B)` , `Dog Fact: A Greyhound could beat a Cheetah in a long distance race` , `Dog Fact: The tallest dog in the world is 44 inches/1.118m tall` , `Dog Fact: A Dog's sense of smell is 100,000 times better than Humans` , `Dog Fact: A greyhound can run 45mph/72kmh` , `Dog Fact: Dogs can also find yawns to be contagious!` , `Dog Fact: A panting Dog can take 300-400 breaths every minute! (compared to 30-40 a minute)`]
+    dogresponse = [`Dog Fact: A Greyhound could beat a Cheetah in a long distance race` , `Dog Fact: The tallest dog in the world is 44 inches/1.118m tall` , `Dog Fact: A Dog's sense of smell is 100,000 times better than Humans` , `Dog Fact: A greyhound can run 45mph/72kmh` , `Dog Fact: Dogs can also find yawns to be contagious!` , `Dog Fact: A panting Dog can take 300-400 breaths every minute! (compared to 30-40 a minute)`]
     if(message.content === (`${prefix1}dog`)) {
         message.channel.send(dogresponse[Math.floor(Math.random() * dogresponse.length)])
         message.channel.send(doggifs[Math.floor(Math.random() * doggifs.length)])
@@ -140,7 +140,7 @@ client.on('message', message => {
     }
     //wild cats
     wildgifs = [`https://gph.is/2cG6wcM` , `https://gph.is/XHWsDC` , `https://gph.is/2p9WM2o` , `https://gph.is/1HaJhMw` , `https://gph.is/16j9gWH` , `https://gph.is/1macHUJ` , `https://gph.is/227BkFL` , `https://gph.is/1SHjSnC` , `https://gph.is/1xJvz2O` , `https://gph.is/2WgkWFq` , `https://gph.is/2d947YM`]
-    wildresponse = [`Stoat Facts: In Nothern Countries, Stoats change colours with the seasons to camouflage, and also to adapt its fur to the weather!` , `Stoat Fact: a Stoat once travelled 70km in 2 weeks!` , `Opossum Fact: They help slow the spread of Lyme Disease by eating Ticks!` , `Opossum Fact: Due to an Opossum's body temperature - they almost never get rabies!` , `Opossum Fact: Opossums are immune to most snake venom!` , `Raccoon Fact: Raccoons will try to wash their food before they eat it!` , `Raccoon Fact: Raccoons can live up to 20 years in captivity!` , `Raccoon Fact: A Raccoon once lived in the White House!` , `Weasel Fact: The Least Weasel is the smallest carnivore in the world!` , `Weasel Fact: Weasels stay warm by curling up into balls!`]
+    wildresponse = [`Stoat Facts: In Northern Countries, Stoats change colours with the seasons to camouflage, and also to adapt its fur to the weather!` , `Stoat Fact: a Stoat once travelled 70km in 2 weeks!` , `Opossum Fact: They help slow the spread of Lyme Disease by eating Ticks!` , `Opossum Fact: Due to an Opossum's body temperature - they almost never get rabies!` , `Opossum Fact: Opossums are immune to most snake venom!` , `Raccoon Fact: Raccoons will try to wash their food before they eat it!` , `Raccoon Fact: Raccoons can live up to 20 years in captivity!` , `Raccoon Fact: A Raccoon once lived in the White House!` , `Weasel Fact: The Least Weasel is the smallest carnivore in the world!` , `Weasel Fact: Weasels stay warm by curling up into balls!`]
     if(message.content === (`${prefix1}wildcat`)) {
         message.channel.send("A Wild Cat! "  + wildresponse[Math.floor(Math.random() * wildresponse.length)] + " (disclaimer: not actual cats)")
         message.channel.send(wildgifs[Math.floor(Math.random() * wildgifs.length)])
@@ -189,14 +189,14 @@ client.on('message', message => {
     }
 
     if(message.content === (`${prefix1}information`)) {
-        message.channel.send("owo cat was made using javascript, by CatProcrasinates")
+        message.channel.send("Cloud_Cat was made using javascript, by CatProcrasinates. Clouud_Cat used to be called owo cat")
         //message.channel.send("More information about the bot: https://bit.ly/help_owocat")
     }
     //if(message.content === (`${prefix1}help information`)) {
         //message.channel.send("Using the command `cat information` tells you that this bot was made using javascript, and gives you a link for more information (https://bit.ly/help_owocat)"
     
         if(message.content === (`${prefix1}vote`)) {
-        message.reply("You can vote for clouud_cat here - https://discordbotlist.com/bots/owocat")
+        message.reply("You can vote for Clouud_Cat here - https://discordbotlist.com/bots/owocat")
         message.channel.send("Thank you :D")
     }
 
