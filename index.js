@@ -185,7 +185,7 @@ client.on('message', message => {
         message.channel.send("https://www.helpguide.org/find-help.htm")
     }
     
-    if(message.content === (`{$prefix1}helplines help`))
+    if(message.content === (`${prefix1}helplines help`))
     {
         message.channel.send("Using the command `cat helplines` shares mental health, and other, helplines for the United States, UK, Ireland, Canada, Australia, New Zealand, India, The Philippines, and South Africa")
         message.channel.send("https://www.helpguide.org/find-help.htm")
