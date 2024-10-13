@@ -5,7 +5,7 @@ const client = new Discord.Client();
 const Eris = require("eris");
 const { Member } = require('eris');
 
-const bot = new Eris.CommandClient(`NjkxMzk4MjkzOTAwNjIzOTEy.XuasZA.QRxXObD8-VonzO6VrCB234ZLUCQ`, {}, {
+const bot = new Eris.CommandClient(`REMOVED`, {}, {
     description: "owo cat :)",
     owner: "Inane Cat",
     prefix: "cat "
