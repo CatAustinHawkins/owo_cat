@@ -5,6 +5,7 @@ owo_cat was a project I started in September 2020, to see how discord bots worke
 I used discord js / javascript.
 
 
+
 Information Commands:
 
 help - displays all the commands
