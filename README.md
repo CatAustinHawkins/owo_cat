@@ -2,11 +2,16 @@
 
 owo_cat was a project I started in September 2020, to see how discord bots worked.
 
-I used discord js / javascript and I hosted it on Heroku.
+I used discord js / javascript and I hosted it on Heroku. 
 ​
 
 
-Information Commands:
+
+**Commands**
+
+
+
+**Information Commands:**
 
 help - displays all the commands
 
@@ -20,7 +25,7 @@ vote- sends the user a link to a discord bot vote page
 
 ​
 
-Animal/Gif Themed Commands:
+**Animal/Gif Themed Commands**
 
 cat - tells the user a cat fact, and sends a gif of a cat 
 
@@ -36,7 +41,7 @@ pokemon - tells the user some pokemon trivia, and sends a pokemon-themed gif
 
  
 
-Personal Commands:
+**Personal Commands**
 
 rateme - rates the user out of ten (10)!
 
@@ -50,7 +55,7 @@ pfp - sends the users profile picture/avatar
 
 ​
 
-Other Commands:
+**Other Commands**
 
 facts - tells the user a random fact
 
