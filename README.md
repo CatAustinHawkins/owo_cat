@@ -45,9 +45,9 @@ pokemon - tells the user some pokemon trivia, and sends a pokemon-themed gif
 
 rateme - rates the user out of ten (10)!
 
-compliment - compliments the user ^-^
+compliment - compliments the user
 
-unsettling compliment - gives the user a,,, special compliment.
+unsettling compliment - gives the user an unusual compliment.
 
 hug - hugs the user :D
 
